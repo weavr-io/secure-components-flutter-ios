@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'SecureComponentsFlutter'
-  s.version          = '1.6.5-beta'
+  s.version          = '1.6.5'
   s.license          = { :type => 'MIT' }
   s.summary          = 'Flutter build variant'
   s.homepage         = 'https://weavr-io'
   s.authors          = { 'Weavr' => 'info@weavr.com' }
   s.platform         = :ios
-  s.source 	     = { :git => 'https://github.com/weavr-io/secure-components-flutter-ios', :tag => spec.version.to_s }
+  s.source 	     = { :git => 'https://github.com/weavr-io/secure-components-flutter-ios', :tag => s.version.to_s }
   s.requires_arc     = true
   s.ios.deployment_target    = '13.0'
   s.xcconfig = {
