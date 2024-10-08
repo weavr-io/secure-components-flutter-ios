@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.vendored_frameworks = 'WeavrComponents.xcframework' 
-    sp.dependency 'CryptoXC', '0.3'
   end
 
 end
