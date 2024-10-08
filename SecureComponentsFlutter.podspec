@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SecureComponentsFlutter'
-  s.version          = '1.6.5'
+  s.version          = '1.6.6'
   s.license          = { :type => 'MIT' }
   s.summary          = 'Flutter build variant'
   s.homepage         = 'https://weavr-io'
@@ -14,18 +14,11 @@ Pod::Spec.new do |s|
     'LIBRARY_SEARCH_PATHS' => '$(SDKROOT)/usr/lib/swift', 
 }
 
-  s.default_subspec = 'Default'
-
-  s.subspec 'Default' do |sp|
-    sp.dependency 'WeavrComponents/Combined'
-  end
+  s.default_subspec = 'Core'
 
   s.subspec 'Core' do |sp|
     sp.vendored_frameworks = 'WeavrComponents.xcframework' 
-  end
-
-  s.subspec 'Combined' do |sp|
-    sp.dependency 'WeavrComponents/Core' 
     sp.dependency 'CryptoXC', '0.3'
   end
+
 end
