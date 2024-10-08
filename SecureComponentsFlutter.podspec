@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SecureComponentsFlutter'
-  s.version          = '1.6.4-beta'
+  s.version          = '1.6.5-beta'
   s.license          = { :type => 'MIT' }
   s.summary          = 'Flutter build variant'
   s.homepage         = 'https://weavr-io'
